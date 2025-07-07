@@ -6,7 +6,7 @@ document.getElementById('forgot-form').addEventListener('submit', async (e) => {
   const email = document.getElementById('forgot-email').value.trim();
 
   const { data, error } = await supabase.auth.resetPasswordForEmail(email, {
-    redirectTo: 'https://skinojosh22.github.io/Admin-dashboard/Authentication/Forgotten/reset-password.html'
+    redirectTo: 'https://skinojosh22.github.io/Admin-dashboard/Authentication/reset-password.html'
   });
 
   if (error) {
