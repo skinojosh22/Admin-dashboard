@@ -66,7 +66,7 @@ document.getElementById('signup-form').addEventListener('submit', async (e) => {
 
   // 5. Success – redirect to dashboard
   alert('Signup complete! 🚀 Welcome aboard!');
-  window.location.href = '/index.html';
+  window.location.href = '../index.html';
 });
 
 document.getElementById('toggle-password').addEventListener('click', () => {
