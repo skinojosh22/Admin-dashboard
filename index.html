@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/toast.css">
+
+  <title>Admin start-Up</title>
+</head>
+<body>
+  <h1>🛍 Product Admin Dashboard</h1>
+
+<!-- Product Form -->
+<form id="add-product-form">
+  <input type="text" id="name" placeholder="Product Name" required />
+  <input type="number" id="price" step="0.01" min="0" placeholder="Price" required />
+  
+  <select id="category">
+  <option value="all">All Categories</option>
+  <option value="electronics">Electronics</option>
+  <option value="fashion">Fashion</option>
+  <option value="books">Books</option>
+  <option value="appliances">Appliances</option>
+  <option value="food">Food</option>
+
+  <input type="file" id="image" placeholder="Image URL" accept="image/*" required />
+  <img id="image-preview" src="" alt="Preview" style="max-width: 50px; display: none; margin-top: 10px;">
+  <button type="submit">Add Product</button>
+</form>
+
+<div class="user-info" id="user-info"></div>
+
+<input type="text" id="admin-search" placeholder="Search by name">
+<select id="admin-category">
+  <option value="all">All Categories</option>
+  <option value="electronics">Electronics</option>
+  <option value="fashion">Fashion</option>
+  <option value="books">Books</option>
+  <option value="appliances">Appliances</option>
+  <option value="food">Food</option>
+  <!-- Add more based on your products -->
+</select>
+<button class="logout-btn" id="logout-btn">Logout</button>
+
+<!-- Product Grid -->
+<div id="product-list"></div>
+
+<div id="preview-modal" class="modal hidden">
+  <div class="modal-content">
+    <span id="close-preview" class="close-btn">&times;</span>
+    <img id="preview-image" src="" alt="">
+    <h2 id="preview-name"></h2>
+    <p id="preview-category"></p>
+    <p id="preview-price"></p>
+  </div>
+</div>
+
+<div id="confirm-modal" class="modal hidden">
+  <div class="modal-content">
+    <p>Are you sure you want to delete this product?</p>
+    <div class="modal-buttons">
+      <button id="confirm-yes">Yes</button>
+      <button id="confirm-no">No</button>
+    </div>
+  </div>
+</div>
+<div id="toast-container"></div>
+<script type="module" src="index.js"></script>
+</body>
+</html>
