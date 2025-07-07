@@ -13,6 +13,6 @@ document.getElementById('reset-form').addEventListener('submit', async (e) => {
     alert('Password reset failed: ' + error.message);
   } else {
     alert('Password updated successfully! 🎉');
-    window.location.href = '/Authentication/Login.html';
+    window.location.href = 'https://skinojosh22.github.io/Admin-dashboard/Authentication/Login.html';
   }
 });
