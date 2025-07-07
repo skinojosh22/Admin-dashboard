@@ -24,7 +24,7 @@ document.getElementById('login-form').addEventListener('submit', async (e) => {
   }
 
   alert('Login successful! 🎉');
-  window.location.href = '../../index.html'; 
+  window.location.href = '../index.html'; 
 });
 
   document.getElementById('toggle-password').addEventListener('click', () => {
