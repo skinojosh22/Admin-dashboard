@@ -61,6 +61,20 @@ Honestly, this changed the way I see web development. Now I understand how you c
 
 ---
 
+✅ What Works Right Now  
+User auth with session check  
+CRUD for products (Create, Read, Update, Delete)  
+Product image uploads to Supabase  
+Image previews before uploading  
+Only signed-in users can manage their data  
+Private bucket access with Signed URLs  
+Clean UI with reset after submission  
+
+🌐 [View Live Project](https://skinojosh22.github.io/Admin-dashboard/Authentication/Login.html)
+
+
+---
+
 ## 🛠 Things I Want to Improve Next
 
 - Add dark mode 🌙
