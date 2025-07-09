@@ -1,0 +1,94 @@
+@media screen and (max-width: 687px) {
+  body {
+    padding: 12px;
+  }
+
+
+  .user-info {
+    position: relative;
+    top: auto;
+    right: auto;
+    margin: 12px auto 10px auto;
+    width: fit-content;
+    text-align: center;
+    background-color: #111827;
+    color: #f9fafb;
+    padding: 10px 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 1;
+  }
+
+  #theme-toggle {
+    position: relative;
+    top: auto;
+    right: auto;
+    margin: 0 auto 20px auto;
+    display: block;
+    width: fit-content;
+    background-color: #111;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 6px;
+    z-index: 1;
+  }
+
+  form {
+    max-width: 100%;
+    margin-top: 16px;
+    z-index: 0;
+    position: relative;
+  }
+
+  #product-list {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 12px;
+  }
+
+  .product-card img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .admin-controls {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #admin-search,
+  #admin-category {
+    font-size: 0.95rem;
+    flex: 1 1 100%;
+  }
+
+  .logout-btn {
+    position: relative;
+    margin: 12px auto;
+    width: 100%;
+  }
+
+  .modal-content {
+    padding: 16px;
+    max-width: 95%;
+    height: auto;
+  }
+
+  .modal-content img {
+    height: 180px;
+  }
+
+  .modal-content h2 {
+    font-size: 20px;
+  }
+
+  .modal-content p {
+    font-size: 14px;
+  }
+
+  .close-btn {
+    top: 8px;
+    right: 10px;
+    font-size: 20px;
+    padding: 4px 10px;
+  }
+}

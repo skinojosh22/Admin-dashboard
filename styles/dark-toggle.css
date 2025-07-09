@@ -1,0 +1,67 @@
+html.dark body {
+   background-color: #111827; 
+   color: #f9fafb; 
+  }
+
+html.dark .product-card { 
+  background-color: #1f2937; 
+  border-color: #374151; 
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+ }
+
+html.dark .product-card:hover { 
+  box-shadow: 0 8px 18px rgba(255, 255, 255, 0.08); 
+}
+
+html.dark .product-card input { 
+  color: #f9fafb; 
+}
+
+html.dark .product-card input.editable { 
+  background-color: #374151; 
+  border-color: #60a5fa; 
+}
+
+html.dark .product-card input.editable:focus { 
+  background-color: #1e3a8a; 
+  border-color: #3b82f6; 
+}
+
+html.dark .logout-btn { 
+  background-color: #dc2626; 
+  color: white; 
+}
+
+html.dark .logout-btn:hover { 
+  background-color: #7f1d1d; 
+}
+
+html.dark .user-info { 
+  background-color: #1f2937; 
+  color: #f9fafb; 
+}
+
+html.dark .modal-content { 
+  background-color: #1e293b; 
+  color: #f9fafb; 
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.15); 
+}
+
+html.dark .modal-content p, html.dark .modal-content h2 { 
+  color: #f3f4f6; 
+}
+
+html.dark .close-btn { 
+  background-color: #f3f4f6; 
+  color: #1f2937; 
+}
+
+html.dark .close-btn:hover { 
+  background-color: #d1d5db; 
+}
+
+.dark #theme-toggle{
+background-color: white;
+color: black;
+}
+

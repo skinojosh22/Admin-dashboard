@@ -234,7 +234,7 @@ form {
 
 .logout-btn {
   position: absolute;
-  top: 60px;
+  top: 103px;
   right: 20px;
   background: #dc2626;
   color: white;
@@ -248,6 +248,20 @@ form {
 
 .logout-btn:hover {
   background: #b91c1c;
+}
+
+#theme-toggle{
+background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+position: absolute;
+  top: 65px;
+  right: 20px;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
 }
 
 .user-info {

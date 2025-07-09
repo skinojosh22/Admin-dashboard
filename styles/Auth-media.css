@@ -1,0 +1,55 @@
+@media screen and (max-width: 480px) {
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    overflow-y: auto;
+  }
+
+  .wrapper {
+    margin: auto;
+    padding: 24px;
+    width: 95%;
+    max-width: 360px;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+    text-align: center;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="date"] {
+    font-size: 15px;
+    padding: 10px;
+    margin-bottom: 12px;
+  }
+
+  button {
+    width: 100%;
+    font-size: 15px;
+    padding: 10px 0;
+  }
+
+  .remember-forgot,
+  .register-link {
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .password-box button {
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #fff;
+  }
+}

@@ -3,12 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+  (function () {
+    const prefersDark = localStorage.getItem("dark-mode");
+    if (prefersDark === "true") {
+      document.documentElement.classList.add("dark");
+    }
+  })();
+</script>
   <link rel="stylesheet" href="styles/index.css">
   <link rel="stylesheet" href="styles/toast.css">
+  <link rel="stylesheet" href="styles/dark-toggle.css">
+  <link rel="stylesheet" href="styles/index-media.css">
 
   <title>Admin start-Up</title>
 </head>
 <body>
+  <div class="user-info" id="user-info"></div>
+  <button id="theme-toggle" class="toggle-mode"></button>
   <h1>🛍 Product Admin Dashboard</h1>
 
 <!-- Product Form -->
@@ -23,13 +35,13 @@
   <option value="books">Books</option>
   <option value="appliances">Appliances</option>
   <option value="food">Food</option>
+  </select>
 
   <input type="file" id="image" placeholder="Image URL" accept="image/*" required />
   <img id="image-preview" src="" alt="Preview" style="max-width: 50px; display: none; margin-top: 10px;">
   <button type="submit">Add Product</button>
 </form>
 
-<div class="user-info" id="user-info"></div>
 
 <input type="text" id="admin-search" placeholder="Search by name">
 <select id="admin-category">
@@ -41,7 +53,7 @@
   <option value="food">Food</option>
   <!-- Add more based on your products -->
 </select>
-<button class="logout-btn" id="logout-btn">Logout</button>
+
 
 <!-- Product Grid -->
 <div id="product-list"></div>
@@ -66,6 +78,8 @@
   </div>
 </div>
 <div id="toast-container"></div>
+<button class="logout-btn" id="logout-btn">Logout</button>
+
 <script type="module" src="index.js"></script>
 </body>
 </html>
