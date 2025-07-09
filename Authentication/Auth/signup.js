@@ -19,7 +19,18 @@ document.getElementById('signup-form').addEventListener('submit', async (e) => {
   }
 
   // 1. Sign up
-  const { error: signupError } = await supabase.auth.signUp({ email, password });
+  const displayName = `${surName} ${otherName}`;
+const { error: signupError } = await supabase.auth.signUp({
+  email,
+  password,
+  options: {
+    data: {
+      full_name: displayName,
+      gender,
+      dob
+    }
+  }
+});
 
   if (signupError) {
     console.error('Signup failed:', signupError.message);
